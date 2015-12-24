@@ -1,27 +1,36 @@
-
-
 @import "../bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../bootstrap-sass/bootstrap-block-grid";
 
+$font1: 'Playfair Display';
+$font2: 'Raleway';
+$font3: 'Bebas';
+
+// colors
+$burnt-orange: '#e59205';
+$dark-ash: '#0b0706';
+$periwinkle: '#6e7498';
+$light-gray: '#afb3c4';
+$dark-gray: '#3a3a3a';
+
 @font-face {
-    font-family: 'Gotham Rounded Book';
+    font-family: 'PlayfairDisplay';
     src: 
-        local('Gotham Rounded Book'),
-        url('../fonts/Gotham-Rounded-Book.ttf');
+        local('PlayfairDisplay-Regular'),
+        url('../fonts/PlayfairDisplay-Regular.otf');
 }
 
 @font-face {
-    font-family: 'Gotham Rounded Bold';
+    font-family: 'Raleway';
     src: 
-        local('Gotham Rounded Bold'),
-        url('../fonts/Gotham-Rounded-Bold.ttf');
+        local('Raleway-Regular'),
+        url('../fonts/Raleway-Regular.otf');
 }
 
 @font-face {
-    font-family: 'Gotham Rounded Medium';
+    font-family: 'Bebas';
     src: 
-        local('Gotham Rounded Medium'),
-        url('../fonts/Gotham-Rounded-Medium.ttf');
+        local('Bebas'),
+        url('../fonts/Bebas.ttf');
 }    
 
 html, body {

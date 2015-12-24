@@ -5642,14 +5642,14 @@ button.close {
     .block-grid-lg-12 > .block-grid-item:nth-of-type(12n+1) {
       clear: both; } }
 @font-face {
-  font-family: 'Gotham Rounded Book';
-  src: local("Gotham Rounded Book"), url("../fonts/Gotham-Rounded-Book.ttf"); }
+  font-family: 'PlayfairDisplay';
+  src: local("PlayfairDisplay-Regular"), url("../fonts/PlayfairDisplay-Regular.otf"); }
 @font-face {
-  font-family: 'Gotham Rounded Bold';
-  src: local("Gotham Rounded Bold"), url("../fonts/Gotham-Rounded-Bold.ttf"); }
+  font-family: 'Raleway';
+  src: local("Raleway-Regular"), url("../fonts/Raleway-Regular.otf"); }
 @font-face {
-  font-family: 'Gotham Rounded Medium';
-  src: local("Gotham Rounded Medium"), url("../fonts/Gotham-Rounded-Medium.ttf"); }
+  font-family: 'Bebas';
+  src: local("Bebas"), url("../fonts/Bebas.ttf"); }
 html, body {
   width: 100%;
   height: 100%; }
