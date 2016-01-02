@@ -26,9 +26,103 @@
         </header>
         
         <div id="heroSection">
-            
+            <div class="Overlay"></div>
         </div>
+        
+        <div id="foodSection">
+        </div>
+        
+        <div id="background2">
+        </div>
+        
+        <div id="categorySection">
+        </div>
+        
+        <div id="background3">
+        </div>
+        
+        <footer>
+        </footer>
     </div>
     
+    <script>
+        $("Document").ready(function(){
+            
+            var categorySectionPosition = $("#categorySection").offset().top;
+            var footerPosition = $("footer").offset().top;
+            var background2InFlow = false;
+            var background3InFlow = false;
+            
+            $(window).scroll(function() 
+            {
+                /*var targetElement = $("#foodSection");
+                var targetPosition = targetElement.offset();
+                var foodSectionPosition = (targetPosition.top - $(window).scrollTop());*/
+                
+                
+                // #foodSection distance from top of window
+                var foodSectionPosition = ( $("#foodSection").offset().top - $(window).scrollTop());
+
+                if(foodSectionPosition < 0)
+                {
+                    $("#background2").css("z-index", "2");
+                }
+                else if(foodSectionPosition > 0)
+                {
+                    $("#background2").css("z-index", "0");
+                }
+                
+                
+                // position detection for #categorySection
+                if( ($(window).scrollTop() + $(window).height()) >= categorySectionPosition && background2InFlow == false)
+                {
+                    background2InFlow = true;
+                    $("#background2").css("position", "relative");
+                    $("#categorySection").css("margin-top", "0px");
+                }
+                else if( ($(window).scrollTop() + $(window).height()) < categorySectionPosition && background2InFlow == true)
+                {
+                    background2InFlow = false;
+                    $("#background2").css("position", "fixed");
+                    $("#categorySection").css("margin-top", "45vh");
+                }
+                
+                
+                
+                
+                
+                // #categorySection distance from top of window
+                var categorySectionDistanceFromTop = ( categorySectionPosition - $(window).scrollTop());
+
+                if(categorySectionDistanceFromTop < 0)
+                {
+                    $("#background3").css("z-index", "2");
+                }
+                else if(categorySectionDistanceFromTop > 0)
+                {
+                    $("#background3").css("z-index", "0");
+                }
+                
+                
+                // position detection for #categorySection
+                if( ($(window).scrollTop() + $(window).height()) >= footerPosition && background3InFlow == false)
+                {
+                    background3InFlow = true;
+                    $("#background3").css("position", "relative");
+                    $("footer").css("margin-top", "0px");
+                }
+                else if( ($(window).scrollTop() + $(window).height()) < footerPosition && background3InFlow == true)
+                {
+                    background3InFlow = false;
+                    $("#background3").css("position", "fixed");
+                    $("footer").css("margin-top", "45vh");
+                }
+                
+                
+                
+            });
+        });
+        
+    </script>
 </body>
 </html>
