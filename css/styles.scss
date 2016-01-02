@@ -1,22 +1,45 @@
 @import "../bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../bootstrap-sass/bootstrap-block-grid";
 
-$font1: 'Playfair Display';
-$font2: 'Raleway';
-$font3: 'Bebas';
+$titleFont: 'Playfair Display';
+$titleFont-bold: 'PlayfairDisplay-Bold';
+$subFont1: 'Raleway';
+$subFont2: 'Bebas';
 
 // colors
-$burnt-orange: '#e59205';
-$dark-ash: '#0b0706';
-$periwinkle: '#6e7498';
-$light-gray: '#afb3c4';
-$dark-gray: '#3a3a3a';
+$burnt-orange: #e59205;
+$dark-ash: #0b0706;
+$dark-ash-transparent: rgba(11, 7, 6, 0.6);
+$periwinkle: #6e7498;
+$light-gray: #afb3c4;
+$dark-gray: #3a3a3a;
 
 @font-face {
     font-family: 'PlayfairDisplay';
     src: 
         local('PlayfairDisplay-Regular'),
         url('../fonts/PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: 
+        local('PlayfairDisplay-Bold'),
+        url('../fonts/PlayfairDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    src: 
+        local('PlayfairDisplay-BoldItalic'),
+        url('../fonts/PlayfairDisplay-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: 
+        local('PlayfairDisplay-Italic'),
+        url('../fonts/PlayfairDisplay-Italic.otf');
 }
 
 @font-face {
@@ -33,6 +56,13 @@ $dark-gray: '#3a3a3a';
         url('../fonts/Bebas.ttf');
 }    
 
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: 
+        local('HelveticaNeue'),
+        url('../fonts/HelveticaNeue.dfont');
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -43,4 +73,76 @@ html, body {
     //    so that class is full-width of screen
     padding-left: 0px;
     padding-right: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header { 
+    width: 100%;
+    height: 15vh;
+    background-color: $dark-ash-transparent;
+    padding: 0%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    
+    h3, h5 {
+        margin: 0px;
+    }
+    
+    ul {
+        width: 70%;
+        height: 100%;
+        margin-left: 15%;
+        padding: 0px;
+        position: relative;
+        
+        li {
+            list-style: none;
+            text-align: center;
+        }
+    }
+}
+
+#listDiv {
+    position: relative;
+    height: 100%;
+}
+
+.headerDiv {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    h6 { 
+        color: white;
+        font-family: $subFont1;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+}
+
+#title {
+    margin: 0px;
+    color: $burnt-orange;
+    font-family: $titleFont-bold;
+    font-size: 45px;
+    
+}
+
+#heroSection {
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url("../images/hero_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    position: fixed;
+    top: 0px;
+    z-index: 1;
 }

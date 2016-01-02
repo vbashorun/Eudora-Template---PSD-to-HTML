@@ -5645,11 +5645,23 @@ button.close {
   font-family: 'PlayfairDisplay';
   src: local("PlayfairDisplay-Regular"), url("../fonts/PlayfairDisplay-Regular.otf"); }
 @font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: local("PlayfairDisplay-Bold"), url("../fonts/PlayfairDisplay-Bold.otf"); }
+@font-face {
+  font-family: 'PlayfairDisplay-BoldItalic';
+  src: local("PlayfairDisplay-BoldItalic"), url("../fonts/PlayfairDisplay-BoldItalic.otf"); }
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: local("PlayfairDisplay-Italic"), url("../fonts/PlayfairDisplay-Italic.otf"); }
+@font-face {
   font-family: 'Raleway';
   src: local("Raleway-Regular"), url("../fonts/Raleway-Regular.otf"); }
 @font-face {
   font-family: 'Bebas';
   src: local("Bebas"), url("../fonts/Bebas.ttf"); }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: local("HelveticaNeue"), url("../fonts/HelveticaNeue.dfont"); }
 html, body {
   width: 100%;
   height: 100%; }
@@ -5657,5 +5669,60 @@ html, body {
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(11, 7, 6, 0.6);
+  padding: 0%;
+  position: fixed;
+  top: 0px;
+  z-index: 5; }
+  header h3, header h5 {
+    margin: 0px; }
+  header ul {
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    padding: 0px;
+    position: relative; }
+    header ul li {
+      list-style: none;
+      text-align: center; }
+
+#listDiv {
+  position: relative;
+  height: 100%; }
+
+.headerDiv {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+  .headerDiv h6 {
+    color: white;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-size: 10px; }
+
+#title {
+  margin: 0px;
+  color: #e59205;
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 45px; }
+
+#heroSection {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/hero_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0px;
+  z-index: 1; }
 
 /*# sourceMappingURL=eudora.css.map */
