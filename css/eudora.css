@@ -5657,8 +5657,14 @@ button.close {
   font-family: 'Raleway';
   src: local("Raleway-Regular"), url("../fonts/Raleway-Regular.otf"); }
 @font-face {
+  font-family: 'Raleway Thin';
+  src: local("Raleway-Thin"), url("../fonts/Raleway-Thin.ttf"); }
+@font-face {
   font-family: 'Bebas';
   src: local("Bebas"), url("../fonts/Bebas.ttf"); }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local("BebasNeue"), url("../fonts/BebasNeue.otf"); }
 @font-face {
   font-family: 'HelveticaNeue';
   src: local("HelveticaNeue"), url("../fonts/HelveticaNeue.dfont"); }
@@ -5715,8 +5721,17 @@ header {
   font-size: 45px; }
 
 /****************************
-    Content positioning
+    Section positioning
 *****************************/
+.Overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55); }
+
+form {
+  width: 100%;
+  height: 100%; }
+
 #heroSection {
   width: 100%;
   height: 100vh;
@@ -5773,5 +5788,39 @@ footer {
   position: relative;
   z-index: 3;
   margin-top: 45vh; }
+
+/****************************
+    Content code
+*****************************/
+#heroContent {
+  width: 60%;
+  height: 200px;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; }
+  #heroContent h2 {
+    margin: 0px;
+    font-family: 'PlayfairDisplay-BoldItalic';
+    letter-spacing: 1px; }
+  #heroContent span {
+    color: #e59205; }
+  #heroContent p {
+    font-family: 'Raleway Thin';
+    width: 50%;
+    margin: 30px auto;
+    font-size: 12px; }
+  #heroContent button {
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'Bebas Neue';
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=eudora.css.map */
