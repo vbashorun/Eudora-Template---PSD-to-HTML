@@ -281,3 +281,54 @@ footer {
     }
     
 }
+
+.vert-center {
+    position: absolute;
+    top: 50%;
+    transform: rotateY(-50%);
+}
+
+.hori-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.full-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#foodSectionHeader {
+    height: 60px;
+}
+
+.food-header-column {
+    height: 100%;
+    
+    h2 {
+        margin: 0px;
+        text-align: center;
+        color: $periwinkle;
+        font-family: 'PlayfairDisplay-BoldItalic';
+        letter-spacing: 1px;
+        
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.orange-bar {
+    height: 1px;
+    width: 100%;
+    background-color: $burnt-orange;
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
