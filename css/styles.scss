@@ -207,6 +207,7 @@ form {
 #foodSection {
     width: 100%;
     height: 100vh;
+    padding-top: 1px;
     
     background-color: white;
     position: relative;
@@ -217,6 +218,7 @@ form {
 #categorySection {
     width: 100%;
     height: 150vh;
+    padding-top: 1px;
     
     background-color: white;
     position: relative;
@@ -279,7 +281,6 @@ footer {
         font-family: 'Bebas Neue';
         text-transform: uppercase;
     }
-    
 }
 
 .vert-center {
@@ -301,13 +302,12 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-
-
-#foodSectionHeader {
+.section-header {
     height: 60px;
+    margin-top: 40px;
 }
 
-.food-header-column {
+.section-header-column {
     height: 100%;
     
     h2 {
@@ -320,6 +320,21 @@ footer {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+    }
+}
+
+.subheader {
+    width: 60%;
+    height: 200px;
+    margin: 0px auto;
+    text-align: center;
+    
+    p {
+        font-family: 'Raleway';
+        width: 65%;
+        margin: 30px auto;
+        font-size: 12px;
+        color: $light-gray;
     }
 }
 
