@@ -5668,6 +5668,28 @@ button.close {
 @font-face {
   font-family: 'HelveticaNeue';
   src: local("HelveticaNeue"), url("../fonts/HelveticaNeue.dfont"); }
+/****************************
+    Utility Classes
+*****************************/
+.vert-center {
+  position: absolute;
+  top: 50%;
+  transform: rotateY(-50%); }
+
+.hori-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.full-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/****************************
+    Normal Css
+*****************************/
 html, body {
   width: 100%;
   height: 100%; }
@@ -5767,7 +5789,7 @@ form {
 
 #foodSection {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 1px;
   background-color: white;
   position: relative;
@@ -5825,22 +5847,6 @@ footer {
     font-family: 'Bebas Neue';
     text-transform: uppercase; }
 
-.vert-center {
-  position: absolute;
-  top: 50%;
-  transform: rotateY(-50%); }
-
-.hori-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); }
-
-.full-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
 .section-header {
   height: 60px;
   margin-top: 40px; }
@@ -5859,8 +5865,8 @@ footer {
 
 .subheader {
   width: 60%;
-  height: 200px;
-  margin: 0px auto;
+  height: 50px;
+  margin: 0px auto 20px auto;
   text-align: center; }
   .subheader p {
     font-family: 'Raleway';
@@ -5876,5 +5882,40 @@ footer {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
+
+.ghost-button {
+  display: block;
+  width: 130px;
+  height: 40px;
+  margin: 0px auto;
+  color: #6e7498;
+  background-color: transparent;
+  border-color: #6e7498;
+  border-width: 1px;
+  border-style: solid;
+  font-family: 'Bebas Neue';
+  text-transform: uppercase; }
+
+.ghost-button-fill {
+  display: block;
+  width: 130px;
+  height: 40px;
+  color: white;
+  margin: 0px auto;
+  background-color: #e59205;
+  border-color: transparent;
+  border-width: 1px;
+  border-style: none;
+  font-family: 'Bebas Neue';
+  text-transform: uppercase; }
+
+.foodCard {
+  width: 50%;
+  margin: 20px auto; }
+  .foodCard img {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 34px -5px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=eudora.css.map */
