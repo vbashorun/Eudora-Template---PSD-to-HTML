@@ -5773,7 +5773,24 @@ form {
   height: 45vh;
   position: fixed;
   bottom: 0px;
-  z-index: 0;
+  z-index: 0; }
+
+#background2TextBlock {
+  width: 40%;
+  height: 100%;
+  background-color: #e59205;
+  position: relative; }
+  #background2TextBlock h2 {
+    color: white;
+    font-family: "PlayfairDisplay-BoldItalic";
+    font-size: 45px; }
+
+#background2Image {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   background-image: url("../images/check_us_out.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -5860,7 +5877,7 @@ footer {
     margin: 0px;
     text-align: center;
     color: #6e7498;
-    font-family: 'PlayfairDisplay-BoldItalic';
+    font-family: "PlayfairDisplay-BoldItalic";
     letter-spacing: 1px;
     position: relative;
     top: 50%;

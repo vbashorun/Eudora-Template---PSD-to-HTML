@@ -220,11 +220,35 @@ form {
     position: fixed;
     bottom: 0px;
     z-index: 0;
+}
+
+#background2TextBlock {
+    width: 40%;
+    height: 100%;
+    background-color: $burnt-orange;
+    position: relative;
+    
+    h2 {
+        color: white;
+        font-family: $titleFont-boldItalic;
+        font-size: 45px;
+    }
+    
+}
+
+#background2Image {
+    
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     
     background-image: url("../images/check_us_out.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 
 #background3 {
@@ -334,7 +358,7 @@ footer {
         margin: 0px;
         text-align: center;
         color: $periwinkle;
-        font-family: 'PlayfairDisplay-BoldItalic';
+        font-family: $titleFont-boldItalic;
         letter-spacing: 1px;
         
         position: relative;
