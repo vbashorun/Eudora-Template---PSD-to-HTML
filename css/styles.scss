@@ -3,8 +3,11 @@
 
 $titleFont: 'Playfair Display';
 $titleFont-bold: 'PlayfairDisplay-Bold';
+$titleFont-boldItalic: 'PlayfairDisplay-BoldItalic';
 $subFont1: 'Raleway';
+$subFont1Bold: 'Raleway Bold';
 $subFont2: 'Bebas';
+$subFont2Alt: 'Bebas Neue';
 
 // colors
 $burnt-orange: #e59205;
@@ -54,6 +57,13 @@ $dark-gray: #3a3a3a;
     src: 
         local('Raleway-Thin'),
         url('../fonts/Raleway-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: 
+        local('Raleway-Bold'),
+        url('../fonts/Raleway-Bold.otf');
 }
 
 @font-face {
@@ -386,12 +396,12 @@ footer {
     border-width: 1px;
     border-style: none;
 
-    font-family: 'Bebas Neue';
+    font-family: $subFont2Alt;
     text-transform: uppercase;
 }
 
 .foodCard {
-    width: 50%;
+    width: 70%;
     margin: 20px auto;
     
     img {
@@ -400,4 +410,41 @@ footer {
         padding: 10px;
         box-shadow: 0px 0px 34px -5px rgba(0, 0, 0, 0.5);
     }
+}
+
+.foodCard-focus {
+    width: 95%;
+    position: relative;
+    top: -20px;
+}
+
+.foodCardInfo {
+    text-align: center;
+    
+    h2 {
+        color: $burnt-orange;
+        font-family: $titleFont-boldItalic;
+    }
+    
+    h6 {
+        font-family: $subFont1Bold;
+    }
+    
+    p {
+        font-family: 'Raleway';
+        width: 65%;
+        margin: 15px auto;
+        font-size: 12px;
+        color: $light-gray;
+    }
+    
+}
+
+.foodCardInfo-collapse {
+    
+}
+
+#categoryMeats {
+    width: 85%;
+    margin: 40px auto 0px auto;
 }

@@ -5660,6 +5660,9 @@ button.close {
   font-family: 'Raleway Thin';
   src: local("Raleway-Thin"), url("../fonts/Raleway-Thin.ttf"); }
 @font-face {
+  font-family: 'Raleway Bold';
+  src: local("Raleway-Bold"), url("../fonts/Raleway-Bold.otf"); }
+@font-face {
   font-family: 'Bebas';
   src: local("Bebas"), url("../fonts/Bebas.ttf"); }
 @font-face {
@@ -5906,16 +5909,39 @@ footer {
   border-color: transparent;
   border-width: 1px;
   border-style: none;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   text-transform: uppercase; }
 
 .foodCard {
-  width: 50%;
+  width: 70%;
   margin: 20px auto; }
   .foodCard img {
     width: 100%;
     margin: 20px auto;
     padding: 10px;
     box-shadow: 0px 0px 34px -5px rgba(0, 0, 0, 0.5); }
+
+.foodCard-focus {
+  width: 95%;
+  position: relative;
+  top: -20px; }
+
+.foodCardInfo {
+  text-align: center; }
+  .foodCardInfo h2 {
+    color: #e59205;
+    font-family: "PlayfairDisplay-BoldItalic"; }
+  .foodCardInfo h6 {
+    font-family: "Raleway Bold"; }
+  .foodCardInfo p {
+    font-family: 'Raleway';
+    width: 65%;
+    margin: 15px auto;
+    font-size: 12px;
+    color: #afb3c4; }
+
+#categoryMeats {
+  width: 85%;
+  margin: 40px auto 0px auto; }
 
 /*# sourceMappingURL=eudora.css.map */
