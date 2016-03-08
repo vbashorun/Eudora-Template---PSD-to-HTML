@@ -253,7 +253,7 @@ form {
 
 #background3 {
     width: 100%;
-    height: 45vh;
+    min-height: 45vh;
     
     position: fixed;
     bottom: 0px;
@@ -404,7 +404,7 @@ footer {
     border-width: 1px;
     border-style: solid;
 
-    font-family: 'Bebas Neue';
+    font-family: $subFont2Alt;
     text-transform: uppercase;
 }
 
@@ -503,5 +503,67 @@ footer {
         color: $light-gray;
         line-height: 20px;
     }
+}
+
+#newsletterContainer {
+    width: 80%;
+    text-align: center;
+    
+    h1 {
+        font-family: $titleFont-boldItalic;
+        color: white;
+        letter-spacing: 1px;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    input {
+        width: 350px;
+        height: 30px;
+        margin: 20px auto 30px auto;
+        border: 1px solid white;
+        
+        color: white;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-family: $subFont2Alt;
+    }
+}
+
+#footerContent {
+    width: 80%;
+    margin: 0px auto;
+}
+#leftFooterContainer {
+    font-family: $subFont1;
+    font-size: 10px;
+    position: absolute;
+    left: 0px;
+    
+    h6 {
+        margin: 0px;
+        color: $light-gray;
+    }
+    
+}
+
+#rightFooterContainer {
+    
+    font-family: $subFont1;
+    font-size: 10px;
+    color: $light-gray;
+    
+    position: absolute;
+    right: 0px;
+    
+    float: right;
+    
+    ul {
+        list-style: none;
+        
+        li {
+            color: $light-gray
+        }
+    }
+    
 }
 

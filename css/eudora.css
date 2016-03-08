@@ -5798,7 +5798,7 @@ form {
 
 #background3 {
   width: 100%;
-  height: 45vh;
+  min-height: 45vh;
   position: fixed;
   bottom: 0px;
   z-index: 0;
@@ -5913,7 +5913,7 @@ footer {
   border-color: #6e7498;
   border-width: 1px;
   border-style: solid;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   text-transform: uppercase; }
 
 .ghost-button-fill {
@@ -5984,5 +5984,48 @@ footer {
     font-size: 10px;
     color: #afb3c4;
     line-height: 20px; }
+
+#newsletterContainer {
+  width: 80%;
+  text-align: center; }
+  #newsletterContainer h1 {
+    font-family: "PlayfairDisplay-BoldItalic";
+    color: white;
+    letter-spacing: 1px;
+    margin: 20px 0px 0px 0px; }
+  #newsletterContainer input {
+    width: 350px;
+    height: 30px;
+    margin: 20px auto 30px auto;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: "Bebas Neue"; }
+
+#footerContent {
+  width: 80%;
+  margin: 0px auto; }
+
+#leftFooterContainer {
+  font-family: "Raleway";
+  font-size: 10px;
+  position: absolute;
+  left: 0px; }
+  #leftFooterContainer h6 {
+    margin: 0px;
+    color: #afb3c4; }
+
+#rightFooterContainer {
+  font-family: "Raleway";
+  font-size: 10px;
+  color: #afb3c4;
+  position: absolute;
+  right: 0px;
+  float: right; }
+  #rightFooterContainer ul {
+    list-style: none; }
+    #rightFooterContainer ul li {
+      color: #afb3c4; }
 
 /*# sourceMappingURL=eudora.css.map */
