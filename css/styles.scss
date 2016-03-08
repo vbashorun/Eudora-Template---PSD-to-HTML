@@ -278,7 +278,7 @@ form {
 
 #categorySection {
     width: 100%;
-    height: 150vh;
+    min-height: 150vh;
     padding-top: 1px;
     
     background-color: white;
@@ -424,6 +424,11 @@ footer {
     text-transform: uppercase;
 }
 
+#categoryMeats {
+    width: 85%;
+    margin: 40px auto 0px auto;
+}
+
 .foodCard {
     width: 70%;
     margin: 20px auto;
@@ -468,7 +473,35 @@ footer {
     
 }
 
-#categoryMeats {
-    width: 85%;
-    margin: 40px auto 0px auto;
+#categoryContent {
+    width: 70%;
+    margin: 70px auto 0px auto;
+    padding-bottom: 40px;
 }
+
+.category-block {
+    width: 100%;
+    text-align: center;
+    
+    img {
+        width: 50px;
+        display: block;
+        margin: 0px auto 20px auto;
+    }
+    
+    h4 {
+        color: $periwinkle;
+        font-family: $titleFont-bold;
+        letter-spacing: 0.5px;
+    }
+    
+    p {
+        font-family: 'Raleway';
+        width: 70%;
+        margin: 25px auto;
+        font-size: 10px;
+        color: $light-gray;
+        line-height: 20px;
+    }
+}
+
