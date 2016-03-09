@@ -94,7 +94,7 @@ $dark-gray: #3a3a3a;
 .vert-center {
     position: absolute;
     top: 50%;
-    transform: rotateY(-50%);
+    transform: translateY(-50%);
 }
 
 .hori-center {
@@ -534,6 +534,7 @@ footer {
     margin: 0px auto;
 }
 #leftFooterContainer {
+    width: 50%;
     font-family: $subFont1;
     font-size: 10px;
     position: absolute;
@@ -547,7 +548,7 @@ footer {
 }
 
 #rightFooterContainer {
-    
+    width: 50%;
     font-family: $subFont1;
     font-size: 10px;
     color: $light-gray;
@@ -555,10 +556,9 @@ footer {
     position: absolute;
     right: 0px;
     
-    float: right;
-    
     ul {
         list-style: none;
+        text-align: center;
         
         li {
             color: $light-gray

@@ -5677,7 +5677,7 @@ button.close {
 .vert-center {
   position: absolute;
   top: 50%;
-  transform: rotateY(-50%); }
+  transform: translateY(-50%); }
 
 .hori-center {
   position: absolute;
@@ -6008,6 +6008,7 @@ footer {
   margin: 0px auto; }
 
 #leftFooterContainer {
+  width: 50%;
   font-family: "Raleway";
   font-size: 10px;
   position: absolute;
@@ -6017,14 +6018,15 @@ footer {
     color: #afb3c4; }
 
 #rightFooterContainer {
+  width: 50%;
   font-family: "Raleway";
   font-size: 10px;
   color: #afb3c4;
   position: absolute;
-  right: 0px;
-  float: right; }
+  right: 0px; }
   #rightFooterContainer ul {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
     #rightFooterContainer ul li {
       color: #afb3c4; }
 
