@@ -6027,8 +6027,14 @@ footer {
   color: #afb3c4; }
   #rightFooterContainer ul {
     list-style: none;
-    text-align: center; }
+    text-align: center;
+    padding: 0px 0px 0px 16.6%; }
     #rightFooterContainer ul li {
-      color: #afb3c4; }
+      color: #afb3c4;
+      float: left;
+      width: 16.6%; }
+      #rightFooterContainer ul li h6 {
+        font-size: 90%;
+        text-transform: uppercase; }
 
 /*# sourceMappingURL=eudora.css.map */
